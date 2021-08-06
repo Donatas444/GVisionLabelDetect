@@ -1,27 +1,9 @@
-# ImageObjectDetection
+Google Vision Object Detection Application (Spring Boot - Angular - H2 in memory database->{if needs change path to DB file})
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
+First make sure your setup: https://cloud.google.com/vision/docs/setup.
 
-## Development server
+Provide GOOGLE_APPLICATION_CREDENTIALS into application.properties: spring.cloud.gcp.credentials.location= {PATH_TO_YOUR_CREDENTIALS}.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run backend Java application, run frontend Angular Application: e.g. Run Java on Intellij -> press RUN. Angular on VSCode -> ng serve --open.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Notice: After submit sometimes need to refresh page to see last entered result if your internet connection in not fast.
