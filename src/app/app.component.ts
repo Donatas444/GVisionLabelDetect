@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+export type EditorType = 'name' | 'profile';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'image-object-detection';
+  title: string;
+
+  constructor() {
+    this.title = '';
+  }
 }

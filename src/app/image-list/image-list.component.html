@@ -1,0 +1,12 @@
+<div class="card my-5">
+  <div class="card-body">
+    <table class="table table-bordered table-striped">
+      <tbody>
+        <tr *ngFor="let image of images">
+          <td> <img src='{{image.imageUrl}}' width="200" height="200" /></td>
+          <td>{{ image.results | json}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

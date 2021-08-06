@@ -1,0 +1,10 @@
+<div class="card my-5">
+  <div class="card-body">
+    <div class="form-group">
+      <label for="image">Image's URL</label>
+      <input type="text" [(ngModel)]="image.imageUrl" class="form-control" id="imageUrl" name="imageUrl"
+        placeholder="Enter images URL" #name="ngModel">
+    </div>
+    <button (click)="onSubmit()" (click)="gotoImageList()" class="btn btn-info">Submit</button>
+  </div>
+</div>
